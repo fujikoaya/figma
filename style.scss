@@ -8,6 +8,7 @@ body {
         margin: 0 auto;
     }
 }
+
 // 知花担当
 // kv
 .kv {
@@ -18,6 +19,7 @@ body {
     position: absolute;
 
 }
+
 .ul-menu {
     display: flex;
     justify-content: end;
@@ -31,6 +33,7 @@ body {
         z-index: 1;
     }
 }
+
 .left {
     display: flex;
     flex-direction: column;
@@ -60,6 +63,7 @@ body {
     font-size: 24px;
     margin-left: 25px;
 }
+
 .right {
     display: flex;
     flex-direction: column;
@@ -75,12 +79,13 @@ body {
     justify-content: space-around;
     align-items: center;
 }
+
 // Pet Livers
 // .h5_petlivers {
 //     margin-top: 50px;
 //     margin-bottom: 60px;
 // }
-.h5_petlivers{
+.h5_petlivers {
     font-size: 43px;
     text-align: center;
     margin-top: 50px;
@@ -117,6 +122,7 @@ body {
     padding-bottom: 27px;
     padding-left: 8px;
 }
+
 .p-1,
 .p-3 {
     font-size: 16px;
@@ -159,11 +165,13 @@ body {
 .livers08 {
     border: solid 3px #FFB017;
 }
+
 // About
-.h5_about{
+.h5_about {
     font-size: 43px;
     text-align: center;
 }
+
 .about {
     position: relative;
 }
@@ -241,6 +249,7 @@ h3 {
         z-index: -1;
     }
 }
+
 // フェードイン
 .about {
     opacity: 0;
@@ -270,11 +279,13 @@ h3 {
         z-index: -1;
     }
 }
+
 // Sponser
-.h5_sponser{
+.h5_sponser {
     font-size: 43px;
     text-align: center;
 }
+
 .sponser {
     display: flex;
     flex-direction: column;
@@ -292,6 +303,7 @@ h3 {
         margin-bottom: 44px;
     }
 }
+
 // フェードイン
 .sponser {
     opacity: 0;
@@ -305,11 +317,13 @@ h3 {
     visibility: visible;
     transform: translateY(0);
 }
+
 //レスポンシブ
 @media screen and (max-width: 767px) {
     h5 {
         font-size: 30px;
     }
+
     // kv
     .sub {
         background-image: url(/img/kv_sp.png);
@@ -323,72 +337,92 @@ h3 {
     .sub1 {
         font-size: 4vw;
     }
+
     .maintitle {
         font-size: 8.6vw;
     }
+
     .sub2 {
         font-size: 3.7vw;
     }
-    .deco, .left, .right {
+
+    .deco,
+    .left,
+    .right {
         display: none;
     }
+
     .main {
         display: block;
     }
-     // pet livers
-     .p-2 {
+
+    // pet livers
+    .p-2 {
         font-size: 24px;
     }
+
     .pet {
         display: block;
     }
+
     .livers {
         width: 68.8%;
         margin: 0 auto;
         text-align: center;
     }
-  
 
-    
+
+
 
     // About
-    .about_asub,.about_bsub {
+    .about_asub,
+    .about_bsub {
         font-size: 20px;
         background-image: url(../img/bg_01.png);
     }
+
     .about_ap.about_bp {
         font-size: 18px;
-    
+
     }
+
     .aboutdeco {
         display: none;
     }
+
     .about_a {
         flex-direction: column-reverse;
     }
+
     .about_b {
         flex-direction: column;
     }
-    .about_aimg,.about_bimg {
+
+    .about_aimg,
+    .about_bimg {
         width: 51.8%;
     }
+
     .about-sub {
-        background-image:url(/img/bg_01.png);
+        background-image: url(/img/bg_01.png);
     }
-    
+
 }
+
 // 藤井担当
 .section5 {
     max-width: 1170px;
     width: 79%;
     margin: 0 auto;
+
     h5 {
         text-align: center;
         font-size: 43px;
         font-style: normal;
         margin: 50px 0 50px 0;
-    }    
+    }
 }
+
 // service
 .svc {
     display: flex;
@@ -418,24 +452,28 @@ h3 {
         }
     }
 }
- // フェードイン
- .service {
-     opacity: 0;
-     visibility: hidden;
-     transition: 3s;
-     transform: translateY(50px);
- }
- .active {
-     opacity: 1;
-     visibility: visible;
-     transform: translateY(0);
- }
+
+// フェードイン
+.service {
+    opacity: 0;
+    visibility: hidden;
+    transition: 3s;
+    transform: translateY(50px);
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 // customer
 .customer {
     .section5 {
         max-width: 1170px;
         width: 79%;
     }
+
     .cv-t {
         display: flex;
         justify-content: space-around;
@@ -466,6 +504,7 @@ h3 {
 
     }
 }
+
 .cv-i {
     .cv-a {
         position: relative;
@@ -513,29 +552,34 @@ h3 {
         }
     }
 }
- // フェードイン
- .customer {
-     opacity: 0;
-     visibility: hidden;
-     transition: 3s;
-     transform: translateY(50px);
- }
- .active {
-     opacity: 1;
-     visibility: visible;
-     transform: translateY(0);
- }
- .cv-i {
-     opacity: 0;
-     visibility: hidden;
-     transition: 3s;
-     transform: translateY(25px);
- }
- .active {
-     opacity: 1;
-     visibility: visible;
-     transform: translateY(0);
- }
+
+// フェードイン
+.customer {
+    opacity: 0;
+    visibility: hidden;
+    transition: 3s;
+    transform: translateY(50px);
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.cv-i {
+    opacity: 0;
+    visibility: hidden;
+    transition: 3s;
+    transform: translateY(25px);
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
 // contact   
 .ct-a {
     .section5 {
@@ -666,6 +710,7 @@ h3 {
         }
     }
 }
+
 // フェードイン
 .ct-a {
     opacity: 0;
@@ -679,153 +724,177 @@ h3 {
     visibility: visible;
     transform: translateY(-10px);
 }
+
 // company
 .lw-m {
     .section5 {
         max-width: 1170px;
         width: 79%;
-
-        .lw {
-            display: flex;
-            justify-content: space-around;
-
-            .lw-a {
-                .lw-sbt {
-                    font-size: 63px;
-                }
-
-                .p-font {
-                    font-size: 21px;
-                }
-
-                .ceo {
-                    font-size: 18px;
-                }
-            }
-
-            .lw-b {
-                width: 49%;
-            }
-
-        }
     }
+
+    .lw {
+        display: flex;
+        justify-content: space-around;
+
+        .lw-a {
+            .lw-sbt {
+                font-size: 63px;
+            }
+
+            .p-font {
+                font-size: 21px;
+            }
+
+            .ceo {
+                font-size: 18px;
+            }
+        }
+
+        .lw-b {
+            width: 49%;
+        }
+
+    }
+
 }
 
 // フェードイン
- .lw-m {
-     opacity: 0;
-     visibility: hidden;
-     transition: 4s;
-     transform: translateY(60px);
- }
- .active {
-     opacity: 1;
-     visibility: visible;
-     transform: translateY(-10px);
- }
+.lw-m {
+    opacity: 0;
+    visibility: hidden;
+    transition: 4s;
+    transform: translateY(60px);
+}
+
+.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+}
 
 footer {
-         text-align: center;
-         background-color: black;
-         color: white;
-         margin-top: 100px;
-         padding: 20px 0;
- }
- // ブレイクポイント
-@media screen and (max-width:767px){
-    body{
-        .section5{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    padding: 20px 0;
+}
+
+// ブレイクポイント
+@media screen and (max-width:767px) {
+    body {
+        .section5 {
             width: 68.75%;
-            .svc{
+
+            .svc {
                 display: block;
-                .svc-a{
+
+                .svc-a {
                     width: 75.32%;
                     margin-bottom: 30px;
                     margin-left: 50px;
-                    .svc-b{
+
+                    .svc-b {
                         position: relative;
-                        .font{
+
+                        .font {
                             position: absolute;
                             top: 15%;
                             left: 43%;
                         }
-                        p{
+
+                        p {
                             padding: 6px;
                         }
                     }
-                }    
+                }
             }
-            .cv-t{
+
+            .cv-t {
                 display: block;
                 text-align: center;
-                
-                img{
+
+                img {
                     box-shadow: 10px 10px 0px 0 #E7AFC3;
                     width: 75.32%;
-                    
+
                 }
-                .cv-o{
+
+                .cv-o {
                     background-image: url(../../img/bg_02.png);
                     padding-top: 0;
                     margin-top: 20px;
                     width: 85.18%;
                     text-align: left;
                     padding: 10px 90px 20px 25px;
-                    margin-left: 45px;      
+                    margin-left: 45px;
                 }
             }
         }
-        .cv-a{
+
+        .cv-a {
             display: none;
         }
-        .cv-b{
+
+        .cv-b {
             display: none;
         }
-        .cv-c{
+
+        .cv-c {
             display: none;
         }
-        .cv-d{
+
+        .cv-d {
             display: none;
         }
-        
-        .ct-a{
-            .section5{ 
+
+        .ct-a {
+            .section5 {
+
                 // width: 68.75%;
-                .ct{
+                .ct {
                     display: block;
-                    .ct-left{
+
+                    .ct-left {
                         width: 100%;
                         text-align: center;
-                        .ct-sbt{
+
+                        .ct-sbt {
                             font-size: 18px;
                             margin-left: 200px;
                         }
-                        form{
-                            dl{
-                                dt{
+
+                        form {
+                            dl {
+                                dt {
                                     text-align: left;
                                     margin-left: 60px;
                                 }
                             }
                         }
                     }
-                    .line{
+
+                    .line {
                         border: 3px solid black;
                         width: 100%;
                         margin-top: 50px;
                     }
-                    .ct-right{
+
+                    .ct-right {
                         width: 100%;
                         text-align: center;
                         margin-top: 30px;
-                        .ct-sbe{
+
+                        .ct-sbe {
                             font-size: 18px;
                             margin-left: 200px;
                         }
-                        .info{
+
+                        .info {
                             display: flex;
                             position: relative;
-                            .arrow{
+
+                            .arrow {
                                 position: absolute;
                                 transform: rotate(90deg);
                                 text-align: center;
@@ -836,30 +905,37 @@ footer {
                     }
                 }
             }
-            
+
         }
-        .lw-m{
-            .section5{
-                .lw{
+
+        .lw-m {
+            .section5 {
+                .lw {
                     display: block;
-                    .lw-a{
+
+                    .lw-a {
                         margin-left: 60px;
-                        .lw-sbt{ 
+
+                        .lw-sbt {
                             font-size: 8.6vw;
                         }
-                        .p-font{
+
+                        .p-font {
                             font-size: 18px;
                         }
-                        .ceo{
+
+                        .ceo {
                             font-size: 16px;
                         }
                     }
-                    .lw-b{
+
+                    .lw-b {
                         margin-top: 100px;
                         width: 100%;
                         text-align: center;
-                        iframe{
-                            
+
+                        iframe {
+
                             width: 81.72%;
                         }
                     }
@@ -867,5 +943,5 @@ footer {
             }
         }
     }
-    
+
 }

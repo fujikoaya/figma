@@ -310,7 +310,9 @@ h3 {
   .sub2 {
     font-size: 3.7vw;
   }
-  .deco, .left, .right {
+  .deco,
+.left,
+.right {
     display: none;
   }
   .main {
@@ -327,7 +329,8 @@ h3 {
     margin: 0 auto;
     text-align: center;
   }
-  .about_asub, .about_bsub {
+  .about_asub,
+.about_bsub {
     font-size: 20px;
     background-image: url(../img/bg_01.png);
   }
@@ -343,7 +346,8 @@ h3 {
   .about_b {
     flex-direction: column;
   }
-  .about_aimg, .about_bimg {
+  .about_aimg,
+.about_bimg {
     width: 51.8%;
   }
   .about-sub {
@@ -584,20 +588,20 @@ h3 {
   max-width: 1170px;
   width: 79%;
 }
-.lw-m .section5 .lw {
+.lw-m .lw {
   display: flex;
   justify-content: space-around;
 }
-.lw-m .section5 .lw .lw-a .lw-sbt {
+.lw-m .lw .lw-a .lw-sbt {
   font-size: 63px;
 }
-.lw-m .section5 .lw .lw-a .p-font {
+.lw-m .lw .lw-a .p-font {
   font-size: 21px;
 }
-.lw-m .section5 .lw .lw-a .ceo {
+.lw-m .lw .lw-a .ceo {
   font-size: 18px;
 }
-.lw-m .section5 .lw .lw-b {
+.lw-m .lw .lw-b {
   width: 49%;
 }
 

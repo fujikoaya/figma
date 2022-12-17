@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
     <!-- kv -->
     <!-- メニュー -->
@@ -24,13 +25,20 @@
         </ul>
     </div>
     <div class="kv">
-        <div class="deco">
-            <img src="./img/kv_pc.png" alt="">
-        </div>
+        <picture class="deco">
+            <source srcset="./img/kv_pc.png" media="(min-width: 768px)">
+            <img src="./img/kv_sp.png" alt="">
+        </picture>
         <div class="main">
             <div class="left">
-                <img class="left-1" src="./img/kv03.jpg" alt="">
-                <img src="./img/kv_02_pc.jpg" alt="">
+                <picture>
+                    <source srcset="./img/kv03.jpg" media="(min-width: 768px)">
+                    <img src="./img/kv_03_sp.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="./img/kv_02_pc.jpg" media="(min-width: 768px)">
+                    <img src="./img/kv_02_sp.jpg" alt="">
+                </picture>
             </div>
             <div class="sub">
                 <p class="sub1">No. 1 on customer support
@@ -43,9 +51,25 @@
                 </p>
             </div>
             <div class="right">
+                <picture>
+                    <source srcset="./img/kv01.jpg" media="(min-width: 768px)">
+                    <img src="./img/kv_01_sp.jpg" alt="">
+                </picture>
+                <picture>
+                    <source srcset="./img/kv_04.jpg" media="(min-width: 768px)">
+                    <img src="./img/kv_04_sp.jpg" alt="">
+                </picture>
+            </div>
+            
+            <!-- <div class="left">
+                <img class="left-1" src="./img/kv03.jpg" alt="">
+                <img src="./img/kv_02_pc.jpg" alt="">
+            </div>
+            
+            <div class="right">
                 <img class="right-1" src="./img/kv01.jpg" alt="">
                 <img src="./img/kv_04.jpg" alt="">
-            </div>
+            </div> -->
         </div>
 
 
@@ -57,7 +81,7 @@
     <div class="petlivers">
         <section class="pet">
 
-            <div class="livers livers01">
+            <div class="livers livers01 fadeUp">
                 <img src="./img/liver_01.jpg" alt="">
                 <div class="petlivers-p">
                     <p class="p-1">Liver</p>
@@ -65,7 +89,7 @@
                     <p class="p-3">There is no gain without pain</p>
                 </div>
             </div>
-            <div class="livers livers02">
+            <div class="livers livers02 fadeUp">
                 <img src="./img/liver_02.jpg" alt="">
                 <div class="petlivers-p">
                     <p class="p-1">Liver</p>
@@ -73,7 +97,7 @@
                     <p class="p-3">Obviously there is no better friend than my dog</p>
                 </div>
             </div>
-            <div class="livers livers03">
+            <div class="livers livers03 fadeUp">
                 <img src="./img/liver_06.jpg" alt="">
                 <div class="petlivers-p">
                     <p class="p-1">Liver</p>
@@ -81,7 +105,7 @@
                     <p class="p-3">There is only one kind of superhero and that is my dog.</p>
                 </div>
             </div>
-            <div class="livers livers04">
+            <div class="livers livers04 fadeUp">
                 <img src="./img/liver_05.jpg" alt="">
                 <div class="petlivers-p">
                     <p class="p-1">Liver</p>
@@ -89,7 +113,7 @@
                     <p class="p-3">They can tell when you are lying. It is the smell of guilty.</p>
                 </div>
             </div>
-            <div class="livers livers05">
+            <div class="livers livers05 fadeUp">
                 <img src="./img/liver_08.jpg" alt="">
                 <div class="petlivers-p">
                     <p class="p-1">Liver</p>
@@ -97,7 +121,7 @@
                     <p class="p-3">It is totally normal to undestand your pet feelings. </p>
                 </div>
             </div>
-            <div class="livers livers06">
+            <div class="livers livers06 fadeUp">
                 <img src="./img/liver_07.jpg" alt="">
                 <div class="petlivers-p">
                     <p class="p-1">Liver</p>
@@ -105,7 +129,7 @@
                     <p class="p-3">Hiking with my cat gives me a whole another perspective of nature</p>
                 </div>
             </div>
-            <div class="livers livers07">
+            <div class="livers livers07 fadeUp">
                 <img src="./img/liver_10.jpg" alt="">
                 <div class="petlivers-p">
                     <p class="p-1">Liver</p>
@@ -113,7 +137,7 @@
                     <p class="p-3">My parrot is so well trained he can immitate any Hollywood star.</p>
                 </div>
             </div>
-            <div class="livers livers08">
+            <div class="livers livers08 fadeUp">
                 <img src="./img/liver_09.jpg" alt="">
                 <div class="petlivers-p">
                     <p class="p-1">Liver</p>

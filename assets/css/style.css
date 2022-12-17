@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   width: 100%;
 }
@@ -29,13 +30,7 @@ body section {
 }
 
 .left {
-  display: flex;
-  flex-direction: column;
   width: 23%;
-}
-
-.left-1 {
-  margin-bottom: 14px;
 }
 
 .sub {
@@ -59,13 +54,7 @@ body section {
 }
 
 .right {
-  display: flex;
-  flex-direction: column;
   width: 23%;
-}
-
-.right-1 {
-  margin-bottom: 14px;
 }
 
 .main {
@@ -98,6 +87,57 @@ body section {
   padding: 22px 4px 22px 4px;
   background-color: #FFFFFF;
   margin-bottom: 12px;
+  opacity: 0;
+}
+
+.fadeUp {
+  animation-name: fadeUpAnime;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* アニメーションスタートの遅延時間を決めるCSS*/
+.livers01 {
+  animation-delay: 0.2s;
+}
+
+.livers02 {
+  animation-delay: 0.5s;
+}
+
+.livers03 {
+  animation-delay: 0.8s;
+}
+
+.livers04 {
+  animation-delay: 1.1s;
+}
+
+.livers05 {
+  animation-delay: 1.6s;
+}
+
+.livers06 {
+  animation-delay: 2.1s;
+}
+
+.livers07 {
+  animation-delay: 2.6s;
+}
+
+.livers08 {
+  animation-delay: 3.1s;
 }
 
 .petlivers-p {
@@ -294,9 +334,36 @@ h3 {
   h5 {
     font-size: 30px;
   }
+  .kv {
+    position: relative;
+  }
+  .deco {
+    position: absolute;
+    top: 27%;
+  }
+  .deco img {
+    width: 100%;
+  }
+  .left {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+  .left picture img {
+    width: 100%;
+  }
+  .right {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+  }
+  .right picture img {
+    width: 100%;
+  }
   .sub {
-    background-image: url(/img/kv_sp.png);
     text-align: center;
+    width: 100%;
+    margin: 40px 0 85px;
   }
   .ul-menu {
     display: none;
@@ -309,11 +376,6 @@ h3 {
   }
   .sub2 {
     font-size: 3.7vw;
-  }
-  .deco,
-.left,
-.right {
-    display: none;
   }
   .main {
     display: block;
@@ -328,6 +390,7 @@ h3 {
     width: 68.8%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 20px;
   }
   .about_asub,
 .about_bsub {

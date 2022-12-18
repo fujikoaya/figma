@@ -92,7 +92,7 @@ body section {
 
 .fadeUp {
   animation-name: fadeUpAnime;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
   opacity: 0;
 }
@@ -113,31 +113,31 @@ body section {
 }
 
 .livers02 {
-  animation-delay: 0.5s;
+  animation-delay: 0.4s;
 }
 
 .livers03 {
-  animation-delay: 0.8s;
+  animation-delay: 0.6s;
 }
 
 .livers04 {
-  animation-delay: 1.1s;
+  animation-delay: 0.8s;
 }
 
 .livers05 {
-  animation-delay: 1.6s;
+  animation-delay: 1s;
 }
 
 .livers06 {
-  animation-delay: 2.1s;
+  animation-delay: 1.2s;
 }
 
 .livers07 {
-  animation-delay: 2.6s;
+  animation-delay: 1.4s;
 }
 
 .livers08 {
-  animation-delay: 3.1s;
+  animation-delay: 1.6s;
 }
 
 .petlivers-p {
@@ -268,19 +268,6 @@ h3 {
   z-index: -1;
 }
 
-.about {
-  opacity: 0;
-  visibility: hidden;
-  transition: 3s;
-  transform: translateY(50px);
-}
-
-.active {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
 .about_bimg {
   width: 31.6%;
   position: relative;
@@ -296,6 +283,34 @@ h3 {
   z-index: -1;
 }
 
+.about_a {
+  animation: fadeRightAnime 3s linear 1s 1 normal backwards;
+}
+
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.about_b {
+  animation: fadeLeftAnime 3s linear 1s 1 normal backwards;
+}
+
+@keyframes fadeLeftAnime {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 .h5_sponser {
   font-size: 43px;
   text-align: center;

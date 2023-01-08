@@ -455,9 +455,9 @@ h3 {
         margin: 40px 0 85px;
     }
 
-    .ul-menu {
-        display: none;
-    }
+    // .ul-menu {
+    //     display: none;
+    // }
 
     .sub1 {
         font-size: 4vw;
@@ -502,10 +502,14 @@ h3 {
 
 
     // About
+    .about-sub {
+        background-image: url(./img/bg_01.png);
+    }
+
     .about_asub,
     .about_bsub {
         font-size: 20px;
-        background-image: url(../img/bg_01.png);
+        padding-top: 15%;
     }
 
     .about_ap.about_bp {
@@ -681,6 +685,7 @@ h3 {
 }
 
 // フェードイン
+
 .customer {
     opacity: 0;
     visibility: hidden;
@@ -910,6 +915,99 @@ footer {
 // ブレイクポイント
 @media screen and (max-width:767px) {
     body {
+
+        // ハンバーガーの３本線を作る
+        .hamburger {
+            width: 7.7%;
+            // height: 60px;
+            cursor: pointer;
+
+            position: relative;
+            z-index: 999;
+        }
+
+        .hamburger span {
+            display: block;
+            width: 50%;
+            height: 2px;
+            background-color: #000000;
+
+            position: absolute;
+            top: 50%;
+            left: 1250%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hamburger span:nth-child(1) {
+            top: 20px;
+        }
+
+        .hamburger span:nth-child(2) {
+            top: 30px;
+        }
+
+        .hamburger span:nth-child(3) {
+            top: 40px;
+        }
+
+        // ナビゲーション部分を作る
+        #nav-list {
+            width: 30%;
+            height: 90vh;
+            background-color: blue;
+            padding: 13rem 4rem;
+
+            position: fixed;
+            top: 0;
+            right: -100%;
+
+            transition: all .5s;
+
+            z-index: 99;
+
+            .ul-menu {
+                display: block;
+
+                li {
+                    margin: 0;
+                    text-align: center;
+                    color: #fff;
+                    margin-bottom: 15%;
+                }
+            }
+        }
+
+        // ロゴ、３本線、ナビゲーションを横並びにする
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        // ナビを開閉する
+        #nav-list.is-active {
+            right: 0;
+        }
+
+        // 3本線をバッテンにする
+        .hamburger.is-active span:nth-child(1) {
+            top: 25px;
+            left: 1150%;
+            transform: translateY(6px) rotate(-45deg);
+            width: 100%;
+        }
+
+        .hamburger.is-active span:nth-child(2) {
+            display: none;
+        }
+
+        .hamburger.is-active span:nth-child(3) {
+            top: 37px;
+            left: 1150%;
+            transform: translateY(-6px) rotate(45deg);
+            width: 100%;
+        }
+
         .section5 {
             width: 68.75%;
 
@@ -1071,4 +1169,101 @@ footer {
         }
     }
 
+}
+
+// レスポンシブ375px
+@media screen and(max-width:375px) {
+    body {
+        .hamburger span {
+            width: 100%;
+        }
+
+        #nav-list {
+            padding: 13rem 2rem;
+            width: 40%;
+
+            ul {
+                li {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        .hamburger span {
+            width: 100%;
+            left: 1200%;
+        }
+
+        .p_sponser {
+            text-align: center;
+        }
+
+        .section5 {
+            .svc {
+                .svc-a {
+                    width: 86.32%;
+                    margin: 0 auto;
+                    margin-bottom: 25px;
+
+                    .svc-b {
+                        .font {
+                            font-size: 16px;
+                            padding: 0;
+                            top: 6%;
+                        }
+                    }
+                }
+
+            }
+
+            .cv-t {
+                .cv-o {
+                    margin-left: 29px;
+                }
+            }
+
+
+        }
+
+        .ct-a {
+            .section5 {
+                .ct {
+                    .ct-left {
+                        .ct-sbt {
+                            margin-left: 0;
+                        }
+                    }
+
+                    .ct-right {
+                        .ct-sbe {
+                            margin-left: 0;
+                        }
+                        .info {
+                            margin-top: 117px;
+                            .arrow {
+                                margin-left: 135px;
+                                margin-top: -185px
+                            }
+
+                            .what {
+                                width: 92%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .lw-m{
+            .section5 {
+                .lw{
+                    .lw-a{
+                        margin-left: 42px
+                    }
+                    .lw-b{
+                        margin-top: 35px
+                    }
+                }
+            }
+        }
+    }
 }
